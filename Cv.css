@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section-1 {
+    
+    max-width: 50%;
+    height: 100Vh;
+    background-color: #445562;
+}
+
+.main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    height: 17rem;
+    width: 17rem;
+}
+
+.section-1 .name {
+    text-align: center;
+    font-size: 2rem;
+    color: antiquewhite;
+}
+
+.section-1 .intro {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    text-align: justify;
+    font-style: italic;
+    font-weight: 200;
+    color: aquamarine;
+}
+
+.skills {
+    text-align: center;
+    color: bisque;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact {
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    margin: 2px;
+    
+}
+
+.section-2 {
+    width: 50%;
+    height: 100vh;
+}
+.section-2 .education {
+    display: flexbox;
+    text-align: center;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+}
+h4 {
+    background-color: aquamarine;
+    font-size: 2em;
+}
+.education {
+    font-size: 1rem;
+
+}
+.college {
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #445267;
+}
+ 
+.talent {
+    width : 160px;
+    height: 160px;
+    position: relative;
+}
+
+.talent .outer {
+    margin: auto;
+    width : 160px;
+    height: 160px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 6px 10px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    
+}
+
+.talent .outer .inner {
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+    
+}
+
+
+#num1 {
+    font-weight: 500;
+    color: #775567;
+}
+
+circle {
+    margin: auto;
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: round 2s linear forwards;
+} 
+
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+@keyframes round { 
+    100%{
+        stroke-dashoffset: 95;
+    }
+    
+}
+
